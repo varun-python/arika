@@ -1,0 +1,36 @@
+# Guess the number game 
+
+import random
+
+GuessesTaken = 0
+
+number= random.randint(1,5)
+
+print( "My Name is Arika and I have guessed a number")
+
+name = input("Whats your name : ")
+print ( "welcome" , name , "to my game ")
+
+for GuessesTaken in range (5):
+    guess = int(input ("kindly put in your guess : "))
+
+    GuessesTaken+=1
+
+    if guess>number:
+        print("Nopes its larger try smaller number")
+
+    if guess <number:
+        print("nopes guess is small put larger number")
+
+    if guess == number:
+        break
+        print( "wow that was the number ", number, "you did in ", GuessesTaken,"tries" )
+       
+
+if guess!=number:
+    print("You have exceeded 4 tries please restart . The no was ", number,"\n ThankYou for playing with us ")
+
+
+if guess == number:
+        
+    print( "wow that was the number ", number, "you did in ", GuessesTaken,"tries" )
